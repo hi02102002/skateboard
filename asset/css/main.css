@@ -84,6 +84,11 @@ ol {
   background-color: var(--bg-color);
   display: flex;
 }
+@media screen and (max-width: 1439px) {
+  .container {
+    margin: auto 1.5rem;
+  }
+}
 
 .wrapper {
   flex: 1;

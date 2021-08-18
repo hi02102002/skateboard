@@ -6,6 +6,10 @@
    border-radius: 2rem;
    background-color: var(--bg-color);
    display: flex;
+
+   @media screen and (max-width: 1439px) {
+      margin: auto 1.5rem;
+   }
 }
 
 .wrapper {
