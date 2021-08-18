@@ -1,0 +1,23 @@
+{
+   "name": "skateboard",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "watch:sass": "sass asset/sass/main.scss:asset/css/main.css --watch"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/hi02102002/skateboard.git"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/hi02102002/skateboard/issues"
+   },
+   "homepage": "https://github.com/hi02102002/skateboard#readme",
+   "devDependencies": {
+      "node-sass": "^6.0.1"
+   }
+}

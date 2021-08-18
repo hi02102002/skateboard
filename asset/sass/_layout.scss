@@ -1,0 +1,14 @@
+.container {
+   width: 144rem;
+   max-height: 104rem;
+   height: 95vh;
+   margin: auto auto;
+   border-radius: 2rem;
+   background-color: var(--bg-color);
+   display: flex;
+}
+
+.wrapper {
+   flex: 1;
+   padding: 0 6rem;
+}
