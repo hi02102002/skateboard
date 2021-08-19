@@ -1,0 +1,15 @@
+.discover {
+   &__title {
+      font-size: 4rem;
+      line-height: 4rem;
+      font-weight: 600;
+      color: var(--text-color);
+      margin-bottom: 2.8rem;
+   }
+
+   &__item {
+      padding: 4rem;
+      display: flex;
+      flex-direction: column;
+   }
+}

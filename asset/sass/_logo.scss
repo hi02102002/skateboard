@@ -1,8 +1,15 @@
+.logo-container {
+   height: 4rem;
+   display: flex;
+   align-items: center;
+   flex-shrink: 0;
+}
 .main-logo {
    font-size: 2rem;
-   line-height: 100%;
+   line-height: 2rem;
    font-weight: 600;
    color: var(--text-color);
+   height: 2rem;
 }
 
 .sub-logo {
