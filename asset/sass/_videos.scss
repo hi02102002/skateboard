@@ -13,4 +13,10 @@
       grid-auto-rows: 1fr;
       gap: 1.5rem;
    }
+
+   @media screen and (max-width: 460px) {
+      &__list {
+         grid-template-columns: 1fr;
+      }
+   }
 }

@@ -7,10 +7,11 @@
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-
+   transition: 0.4s;
    &__menu,
    &__category {
       padding: 5rem 0;
+      border-bottom: 1px solid #34373c;
    }
 
    &__title {
@@ -62,6 +63,23 @@
       svg {
          width: 1.6rem;
          height: 1.6rem;
+      }
+   }
+
+   @media screen and (max-width: 1060px) {
+      width: 9rem;
+      flex: 0 0 9rem;
+      border-right: 1px solid #34373c;
+      &__title {
+         display: none;
+      }
+
+      &__link span {
+         display: none;
+      }
+
+      &__icon {
+         margin: 0;
       }
    }
 }
