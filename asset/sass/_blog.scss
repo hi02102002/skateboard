@@ -1,0 +1,122 @@
+.blog {
+   margin-bottom: 6rem;
+   &__heading {
+      color: var(--text-color);
+      font-size: 4rem;
+      line-height: 4rem;
+      font-weight: 600;
+      margin-bottom: 2.8rem;
+   }
+
+   &__content {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2.1rem;
+   }
+
+   &__item {
+      position: relative;
+      background-image: url("../img/image1.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 36.5rem;
+      padding: 4rem;
+      border-radius: 2rem;
+      background-position-y: 15%;
+      display: flex;
+      flex-direction: column;
+
+      &-time {
+         position: absolute;
+         bottom: 2rem;
+         right: 2rem;
+      }
+
+      &-title {
+         max-width: 23.6rem;
+         font-size: 3rem;
+         line-height: 3.6rem;
+         color: var(--text-color);
+         letter-spacing: 0.3px;
+         margin-bottom: 3rem;
+      }
+
+      &-author {
+         display: flex;
+         align-items: center;
+
+         .author-img {
+            width: 6rem;
+            height: 6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: 2px solid var(--text-color);
+            position: relative;
+            margin-right: 1rem;
+            img {
+               width: 5rem;
+               height: 5rem;
+               object-fit: cover;
+               border-radius: inherit;
+            }
+
+            .tick {
+               position: absolute;
+               width: 1.6rem;
+               height: 1.6rem;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               background-color: var(--text-color);
+               border-radius: 50%;
+               border: 2px solid #0daabc;
+               bottom: 0.1rem;
+               right: 0;
+            }
+
+            .tick i {
+               font-size: 0.8rem;
+               color: #0daabc;
+            }
+         }
+
+         .author-name {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+         }
+      }
+   }
+
+   &__item + &__item {
+      background-image: url("../img/image2.png");
+      background-position-y: 0;
+
+      .blog__item-title {
+         max-width: 23rem;
+         margin-bottom: 2rem;
+      }
+
+      .blog__item-author .author-img .tick {
+         border-color: #d9a45a;
+
+         i {
+            color: #d9a45a;
+         }
+      }
+
+      .blog__item-author {
+         flex-direction: column-reverse;
+         align-items: flex-start;
+      }
+
+      .blog__item-author .author-img {
+         margin-top: 1rem;
+      }
+   }
+}

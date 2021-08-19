@@ -1,0 +1,143 @@
+.card {
+   display: flex;
+   flex-direction: column;
+   border-radius: 2rem;
+   background-color: var(--video-bg);
+   cursor: pointer;
+   user-select: none;
+   position: relative;
+   overflow: hidden;
+   &__time {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 10;
+      transition: all 0.4s ease;
+   }
+
+   &__top {
+      border-radius: 2rem 2rem 0 0;
+      height: 16rem;
+      position: relative;
+   }
+
+   .video-wrapper {
+      height: 16rem;
+      transition: all 0.4s ease;
+
+      video {
+         width: 100%;
+         height: 100%;
+         max-width: 100%;
+         object-fit: cover;
+         transition: all 0.4s ease;
+      }
+   }
+
+   &__author {
+      position: absolute;
+      right: 2rem;
+      bottom: -3rem;
+      transition: all 0.4s ease;
+
+      &-img {
+         width: 6rem;
+         height: 6rem;
+         border-radius: 50%;
+         border: 2px solid var(--text-color);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         position: relative;
+      }
+
+      img {
+         width: 5rem;
+         height: 5rem;
+         object-fit: cover;
+         border-radius: inherit;
+      }
+
+      &-tick {
+         position: absolute;
+         width: 1.6rem;
+         height: 1.6rem;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: var(--dodgerblue-color);
+         border-radius: 50%;
+         border: 2px solid var(--video-bg);
+         right: 0;
+         bottom: 0.1rem;
+         i {
+            font-size: 1rem;
+            color: var(--text-color);
+         }
+      }
+   }
+
+   &__bottom {
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+   }
+
+   .video-by {
+      color: #b7b9d2;
+      font-size: 1.3rem;
+      line-height: 1.3rem;
+      letter-spacing: 0.5px;
+      margin-bottom: 1.2rem;
+      position: relative;
+      transition: all 0.4s ease;
+   }
+
+   .video-by::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: var(--mediumseagreen-color);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      margin-left: 1rem;
+   }
+
+   &__title {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      letter-spacing: 0.3px;
+      font-weight: 500;
+      color: var(--text-color);
+      margin-bottom: 1.6rem;
+      word-wrap: break-word;
+   }
+
+   &__view-time {
+      margin-top: auto;
+   }
+
+   &:hover .video {
+      transform: scale(1.5);
+      transform-origin: center;
+   }
+
+   &:hover &__author {
+      transform: scale(0.6);
+      right: -0.3rem;
+      bottom: -6.5rem;
+      z-index: 10;
+   }
+
+   &:hover .video-by {
+      opacity: 0;
+   }
+
+   &:hover &__time {
+      opacity: 0;
+      visibility: hidden;
+   }
+}

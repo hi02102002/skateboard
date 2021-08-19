@@ -15,3 +15,16 @@ sidebarLinks.forEach((link) => {
 });
 
 ////////////////////SideBar////////////////////////////
+////////////////////video////////////////////////////
+const cards = document.querySelectorAll(".card");
+cards.forEach((card) => {
+   const video = card.querySelector(".video");
+   card.addEventListener("mouseenter", function (e) {
+      video.play();
+   });
+
+   card.addEventListener("mouseleave", function (e) {
+      video.pause();
+   });
+});
+////////////////////video////////////////////////////
